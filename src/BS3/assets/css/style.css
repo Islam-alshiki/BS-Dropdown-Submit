@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+body{
+  font-family: 'Tajawal';
+  padding-top:2rem;
+}
+*{
+  direction: rtl;
+  text-align: right;
+}
+[class*='col-']{
+  float:right;
+}
+.dropdown{
+  display: inline-block;
+}
+.inline-block{
+  display: inline-block;
+}

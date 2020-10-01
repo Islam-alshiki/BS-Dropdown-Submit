@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <section id="auctions-section" class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-2">
+                    <div class="panel panel-default mb-3">
+                        <div class="panel-body">
+                            <div class="inline-block">
+                            <div class="dropdown" name="sort">
+                                <button aria-expanded="false" class="btn mb-2 w-100 dropdown-toggle" data-toggle="dropdown" type="button">
+                                <span>ترتيب | </span>
+                                <span class="inside"></span>
+                                <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a class="active" value="1">المزاد ( الأقرب أولاً)</a></li>
+                                <li role="presentation"><a value="2">المزاد(الأبعد أولاً)</a></li>
+                                <li role="presentation"><a value="3">(الأقل أولاً)</a></li>
+                                <li role="presentation"><a value="4">السعر (الأعلى أولاً)</a></li>
+                                </ul>
+                            </div>  
+                            <div class="dropdown" name="pageCount">
+                                <button aria-expanded="false" class="btn mb-2 w-100 dropdown-toggle" data-toggle="dropdown" type="button">
+                                <span>عدد النتائج | </span>
+                                <span class="inside"></span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a class="active" value="1">10</a></li>
+                                <li role="presentation"><a value="2">20</a></li>
+                                <li role="presentation"><a value="3">30</a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        <div class="col-xs-12 col-sm-1 pull-left px-0">
+                            <button id="btn-submit" type="submit" class="btn btn-block btn-primary">
+                            GO
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/bs3-dropdown-submit.min.js"></script>
+    <script>
+        $('#btn-submit').on('click',function(){
+            //sort pageCount
+            var sort = $('#sort').val();
+            var pageCount = $('#pageCount').val();
+            alert('GET: /x/y?sort=' + sort + '&pageCount=' + pageCount);  
+        });
+    </script>
+</body>
+</html>

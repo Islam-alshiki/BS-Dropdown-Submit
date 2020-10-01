@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+body{
+  font-family: 'Tajawal';
+  padding-top:2rem;
+
+}
+html[dir="rtl"] body{
+  direction: rtl;
+}
+
+html[dir="rtl"] .dropdown-toggle::after {
+  margin-right: .255em;
+  margin-left: unset;
+}

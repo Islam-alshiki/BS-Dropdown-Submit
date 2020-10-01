@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <section id="auctions-section" class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-2">
+                    <div class="card card-default mb-3">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="dropdown" name="sort" >
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        ترتيب
+                                        |
+                                        
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#" value="1">المزاد ( الأقرب أولاً)</a>
+                                      <a class="dropdown-item" href="#" value="2">المزاد(الأبعد أولاً)</a>
+                                      <a class="dropdown-item" href="#" value="3">(الأقل أولاً)</a>
+                                      <a class="dropdown-item" href="#" value="4">السعر (الأعلى أولاً)</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown mr-2" name="pageCount" >
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        عدد النتائج
+                                        |
+                                        
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item active" href="#" value="1">10</a>
+                                      <a class="dropdown-item" href="#" value="2">20</a>
+                                      <a class="dropdown-item" href="#" value="3">30</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-1 mr-auto px-0">
+                                    <button id="btn-submit" type="submit" class="btn btn-block btn-primary">
+                                    GO
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="assets/js/bs4-dropdown-submit.min.js"></script>
+    <script>
+        $('#btn-submit').on('click',function(){
+            //sort pageCount
+            var sort = $('#sort').val();
+            var pageCount = $('#pageCount').val();
+            alert('GET: /x/y?sort=' + sort + '&pageCount=' + pageCount);  
+        });
+    </script>
+</body>
+</html>
