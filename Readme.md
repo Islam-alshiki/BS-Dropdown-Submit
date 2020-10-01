@@ -1,7 +1,7 @@
 ## Description
 Use bootstrab dropdown as `<select>` to submit data form.
 
-### Requimenrs 
+### Requirements 
 * Bootstrab css
 * Bootstrab js
 * Jquery
