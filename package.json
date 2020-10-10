@@ -1,0 +1,32 @@
+{
+  "name": "bs-dropdown-submit",
+  "version": "1.4.0",
+  "description": "Use bootstrab dropdown as `<select>` to submit data form",
+  "main": "src/BS4/assets/js/bs3-dropdown-submit.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Islam-alshiki/BS-Dropdown-Submit.git"
+  },
+  "keywords": [
+    "submit",
+    "form",
+    "dropdown"
+  ],
+  "author": "islam alshiki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Islam-alshiki/BS-Dropdown-Submit/issues"
+  },
+  "homepage": "https://github.com/Islam-alshiki/BS-Dropdown-Submit#readme",
+  "devDependencies": {
+    "gulp-minify": "^3.1.0"
+  },
+  "dependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2"
+  }
+}
