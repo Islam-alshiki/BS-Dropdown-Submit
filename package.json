@@ -1,6 +1,6 @@
 {
   "name": "bs-dropdown-submit",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Use bootstrab dropdown as `<select>` to submit data form",
   "main": "src/BS4/assets/js/bs3-dropdown-submit.min.js",
   "scripts": {
